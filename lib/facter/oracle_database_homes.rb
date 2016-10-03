@@ -57,7 +57,8 @@ def get_opatch_patches(name)
 end
 
 def get_orainst_loc
-  if FileTest.exists?(get_ora_inv_path + '/oraInst.loc')
+  puts 'THIS IS THE THING I WANTED TO MOCK.  IF YOU SEE THIS, I FAILED'
+  if FileTest.exists?(get_ora_inv_path + '/oraInst.loc') # I *can* mock this though
     str = ''
     output = File.read(get_ora_inv_path + '/oraInst.loc')
     output.split(/\r?\n/).each do |item|
